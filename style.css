@@ -237,7 +237,7 @@ h2 {
     color: var(--c02);
     font-size: clamp(1.1rem, 1.3vw, 1.5rem);
     text-align: center;
-    letter-spacing: clamp(0rem, 0.5vw, 0.4rem);
+    letter-spacing: clamp(0rem, 0.5vw, 0.2rem);
     padding: 0.3rem 0 0.6rem 0;
     border: none;
     font-family: 'Microgramma';
@@ -256,7 +256,7 @@ h2 {
 } input:hover {
     overflow: hidden;
 } input::placeholder {
-    font-size: clamp(0.7rem, 5vw, 1.4rem);
+    font-size: clamp(0.7rem, 5vw, 1.2rem);
     color: #37342F;
     transition: opacity 0.15s ease;
 } button {
@@ -340,6 +340,10 @@ h2 {
     left: 0;
     right: 0;
     margin: 0 auto;
+}
+
+::-webkit-inner-spin-button {
+    display: none;
 }
 
 /* VERSÃO ALTERNATIVA */
