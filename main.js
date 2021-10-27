@@ -57,14 +57,19 @@ document.body.onscroll = function() {
     
             if(window.pageYOffset > (videoPosition / 2)) {
                 
-                document.querySelector('.video01').play()
-                videoPlaying = true;
+                setTimeout(() => {
+                    document.querySelector('.video01').play()
+                    videoPlaying = true;
+                }, 3000);
             }
         } else {
             
             if(window.pageYOffset > 1) {
-                document.querySelector('.video01').play()
-                videoPlaying = true;
+
+                setTimeout(() => {
+                    document.querySelector('.video01').play()
+                    videoPlaying = true;
+                }, 3000);
             }
         }
     }
