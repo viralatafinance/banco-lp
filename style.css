@@ -211,7 +211,7 @@ h2 {
 
 .input_ctnr {
     position: relative;
-    width: clamp(17rem, 75vw, 26rem);
+    width: clamp(17rem, 90vw, 26rem);
     border-radius: 4rem;
     background: none;
     border: 0.2rem solid var(--c03);
@@ -242,13 +242,11 @@ h2 {
     border: none;
     font-family: 'Microgramma';
     font-weight: 900;
-    transition: background-color 0.3s ease-out, box-shadow 0.3s ease;
-    background-color: rgba(0,0,0,0.6);
-    backdrop-filter: blur(2px);
+    transition: box-shadow 0.3s ease;
+    background-color: var(--c01);
     box-shadow: 0 0rem 3rem 0rem var(--c01);
 } input:focus {
     outline: none;
-    background-color:rgba(0,0,0,0.5);
     overflow: hidden;
     box-shadow: 0 0rem 3rem 0rem var(--c01), 0 0 1rem var(--c04);
 } input:focus::placeholder {
@@ -257,7 +255,7 @@ h2 {
     overflow: hidden;
 } input::placeholder {
     font-size: clamp(0.7rem, 5vw, 1.2rem);
-    color: #37342F;
+    color: #222;
     transition: opacity 0.15s ease;
 } button {
     font-family: 'Microgramma';
@@ -528,5 +526,26 @@ h1 {
         position: relative;
         margin: -21rem 0 -25rem 0;
         right: -3rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:1900px) {
+    html {
+        font-size: 20px;
     }
 }
